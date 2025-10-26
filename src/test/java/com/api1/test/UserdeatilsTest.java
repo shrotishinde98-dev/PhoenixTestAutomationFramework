@@ -5,6 +5,8 @@ import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.Test;
 
+import com.api.utils.ConfigManager;
+
 import io.restassured.http.ContentType;
 import io.restassured.http.Header;
 
@@ -19,10 +21,10 @@ public class UserdeatilsTest {
 		
 		
 				 given()
-			        .baseUri("http://64.227.160.186:9000/v1")
+			        .baseUri(ConfigManager.getProperty("BASE_URI"))
 			        .contentType(ContentType.JSON)
 			        .header(m)
-			        .when()
+			       .when()
 			        .get("userdetails")
 			        .then()
 			        .log().all()

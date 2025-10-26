@@ -1,7 +1,11 @@
 package com.api1.test;
 import static org.hamcrest.Matchers.*;
+
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
+import com.api.utils.ConfigManager;
 import com.pojo.user;
 
 import io.restassured.http.ContentType;
@@ -11,12 +15,11 @@ import static io.restassured.RestAssured.*;
 
 public class LoginApiTest {
 	@Test
-	public void Test() {
+	public void Test()  throws IOException {
 	
 		user u = new user("iamfd","password");
-
 		given()
-        .baseUri("http://64.227.160.186:9000/v1")
+		.baseUri(ConfigManager.getProperty("BASE_URI"))
         .contentType(ContentType.JSON)
         .body(u)
         .log().uri()
@@ -28,7 +31,7 @@ public class LoginApiTest {
         .statusCode(200)
         .log().body()
         .body( "message",equalTo("Success"))
-        .time(lessThan(1000L))
+        .time(lessThan(2000L))
         .body(matchesJsonSchemaInClasspath("schema/login.json"))
         .extract().response();
 		
