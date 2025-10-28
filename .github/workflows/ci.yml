@@ -23,12 +23,7 @@ on:
         options: [qa,uat,dev]
         default: qa
         required: true
-      suiteXmlFile:
-           description: "TestNG Xml File"
-           type: choice
-           options: [testing.xml,smoke.xml,regression.xml]
-           default: testng.xml
-           required: true
+  
 jobs:
   test:
 
