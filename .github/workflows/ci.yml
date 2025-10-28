@@ -14,9 +14,9 @@ on:
   pull_request:
     branches: [ "master" ]
   schedule:
-      - cron: "30 18 * * *"
+    - cron: "30 18 * * *"
   workflow_dispatch:
-     inputs:
+    inputs:
       env:
         description: "Environment"
         type: choice
@@ -26,7 +26,7 @@ on:
   
      
 jobs:
-  test:
+ test:
 
     runs-on: ubuntu-latest
 
