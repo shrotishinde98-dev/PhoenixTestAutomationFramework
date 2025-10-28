@@ -36,7 +36,7 @@ public class CountApiTest {
 
 		
     }
-	
+	//negative test 
 	@Test
 	public void NeagtiveTest() {
 		given()
