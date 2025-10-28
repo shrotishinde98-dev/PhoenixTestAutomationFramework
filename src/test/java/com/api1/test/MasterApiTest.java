@@ -30,7 +30,7 @@ public class MasterApiTest {
 		.statusCode(200)
 		.body("message", Matchers.equalTo("Success"))
 		.body("data", Matchers.notNullValue())
-		.time(Matchers.lessThan(2000L))
+		.time(Matchers.lessThan(1000L))
 	    .body("data",Matchers.hasKey("mst_oem"))
 	    .body("data",Matchers.hasKey("mst_model"))
 		.body("data.size()",Matchers.greaterThanOrEqualTo(0))

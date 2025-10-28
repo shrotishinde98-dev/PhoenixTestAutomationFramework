@@ -5,6 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>PhoenixTestAutoFramework</name>
   <description>PhoenixTestAutoFramework</description>
+  
+  <properties>
+  <maven.compiler.source>14</maven.compiler.source>
+  <maven.compiler.target>14</maven.compiler.target>
+  </properties>
   <build>
     <plugins>
       <plugin>
@@ -19,10 +24,6 @@
       </plugin>
      </plugins>
   </build>
-  <properties>
-  <maven.compiler.source>14</maven.compiler.source>
-  <maven.compiler.target>14</maven.compiler.target>
-  </properties>
   <dependencies>
 
 
