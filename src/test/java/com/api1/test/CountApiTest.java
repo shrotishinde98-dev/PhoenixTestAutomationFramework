@@ -34,7 +34,7 @@ public class CountApiTest {
 		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema/verifycount.json"));
 
 		
-	}
+    }
 	
 	@Test
 	public void NeagtiveTest() {

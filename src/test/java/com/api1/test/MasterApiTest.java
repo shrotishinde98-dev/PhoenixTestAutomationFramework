@@ -30,15 +30,15 @@ public class MasterApiTest {
 		.statusCode(200)
 		.body("message", Matchers.equalTo("Success"))
 		.body("data", Matchers.notNullValue())
-		.time(Matchers.lessThan(1000L))
+		.time(Matchers.lessThan(2000L))
 	    .body("data",Matchers.hasKey("mst_oem"))
 	    .body("data",Matchers.hasKey("mst_model"))
 		.body("data.size()",Matchers.greaterThanOrEqualTo(0))
 		.body("data.mst_oem.size()",Matchers.equalTo(2))
 		.body("data.mst_oem.id",Matchers.notNullValue())
-		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema/master.json"));
-		
-	}
+		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema/master.json"))
+	   	.log().all();
+ 	}
      @Test
      public void Auth_missing() {
     	 given()

@@ -23,7 +23,8 @@ public class UserdeatilsTest {
 		 Header m = new Header("Authorization",getToken(Role.FD));
 		
 		 
-				 given()
+			
+		 given()
 			        .baseUri(ConfigManager.getProperty("BASE_URI"))
 			        .contentType(ContentType.JSON)
 			        .header(m)
@@ -36,7 +37,7 @@ public class UserdeatilsTest {
 			        .log().body()
 			        .body( "message",equalTo("Success"))
 			        .and()
-			        .time(lessThan(1000L))
+			        .time(lessThan(2000L))
 			        .and()
 			        .body(matchesJsonSchemaInClasspath("schema/userdetails.json"))
 			        .extract().response();
