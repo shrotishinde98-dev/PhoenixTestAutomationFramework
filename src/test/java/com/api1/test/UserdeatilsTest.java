@@ -24,11 +24,12 @@ public class UserdeatilsTest {
 		
 		 
 			
-		 given()
+		         given()
 			        .baseUri(ConfigManager.getProperty("BASE_URI"))
 			        .contentType(ContentType.JSON)
 			        .header(m)
-			       .when()
+			        .log().uri()
+			        .when()
 			        .get("userdetails")
 			        .then()
 			        .log().all()

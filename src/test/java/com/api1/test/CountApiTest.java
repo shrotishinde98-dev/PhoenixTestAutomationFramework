@@ -19,6 +19,7 @@ public class CountApiTest {
 		given()
 		.baseUri(ConfigManager.getProperty("BASE_URI"))
 		.header("Authorization",AuthToken.getToken(Role.FD))
+		.log().uri()
 		.when()
 		.get("/dashboard/count")
 		.then()

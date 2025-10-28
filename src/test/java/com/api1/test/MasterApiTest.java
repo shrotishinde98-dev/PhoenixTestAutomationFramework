@@ -24,6 +24,7 @@ public class MasterApiTest {
 	
 		.header("Authorization",AuthToken.getToken(Role.FD))
 		.contentType(" ")
+		.log().uri()
 		.when()
 		.post("master")
 		.then()

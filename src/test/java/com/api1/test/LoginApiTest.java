@@ -18,7 +18,7 @@ public class LoginApiTest {
 	public void Test()  throws IOException {
 	
 		user u = new user("iamfd","password");
-		given()
+	 given()
 		.baseUri(ConfigManager.getProperty("BASE_URI"))
         .contentType(ContentType.JSON)
         .body(u)
