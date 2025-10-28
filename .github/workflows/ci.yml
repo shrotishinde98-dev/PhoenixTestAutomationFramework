@@ -7,8 +7,7 @@ on:
     branches: [ "master" ]
   schedule: # Set the CRON for MIDNIGHT IST ---- UTC
     - cron: "30 18 * * *"
-    - cron: "30 17 * * *"
-    - cron: "30 16 * * *"
+  
 
   workflow_dispatch: 
     inputs:
@@ -46,4 +45,4 @@ jobs:
             echo "suiteXmlFile=${{ github.event.inputs.suiteXmlFile || 'testng.xml'}}" >> $GITHUB_OUTPUT
             echo "env=${{ github.event.inputs.env || 'qa' }}" >> $GITHUB_OUTPUT
 
-    - name: Execute Test Automation Framework
+  
