@@ -18,6 +18,7 @@ public class ConfigManager {
     	//constructor
     }
     
+    
     static {
     
      env= System.getProperty("env","qa");
