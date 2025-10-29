@@ -10,19 +10,20 @@ on:
   
 
   workflow_dispatch: 
-    inputs:
-      env:
-        description: "Environment"
-        type: choice
-        options: [qa,uat,dev]
-        default: qa
-        required: true
-      suiteXmlFile:
-        description: "Testng xml file"
-        type: choice
-        options: [testng.xml,smoke.xml,regression.xml]
-        default: testng.xml
-        required: true
+     inputs:
+         env:
+           description: "Environment"
+           type: choice
+           options: [qa,uat,dev]
+           default: qa
+           required: true
+           
+         suiteXmlFile:
+           description: "Testng xml file"
+           type: choice
+           options: [testng.xml,smoke.xml,regression.xml]
+           default: testng.xml
+           required: true
    
 jobs:
   test:
