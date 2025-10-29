@@ -21,7 +21,6 @@ on:
         description: "TestNG Xml File"
         type: choice
         options: [testng.xml,smoke.xml,regression.xml]
-    
         default: testng.xml
         required: true
 jobs:
@@ -45,4 +44,15 @@ jobs:
             echo "suiteXmlFile=${{ github.event.inputs.suiteXmlFile || 'testng.xml'}}" >> $GITHUB_OUTPUT
             echo "env=${{ github.event.inputs.env || 'qa' }}" >> $GITHUB_OUTPUT
 
-  
+    - name: Execute Test
+      run: mvn clean test -DsuiteXmlFile=testng.xml -Denv=qa
+    - name: upload build artifact
+      if: always()
+      uses: actions/upload-artifact@v5.0.0
+      with:
+          name: surefire report
+          path: target/surefire-reports/
+          retention-days: 10
+      
+      
+      
