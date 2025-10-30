@@ -47,6 +47,7 @@ public class CountApiTest {
 		.then()
 		.statusCode(401)
 		.log().all();
+		
 	}
 
 }

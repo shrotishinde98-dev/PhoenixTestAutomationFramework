@@ -18,6 +18,7 @@ public class AuthToken {
 		
 		user userdetails = null;
 		
+		
 		if(role == FD) {
 			userdetails =	new user("iamfd", "password");
 		}

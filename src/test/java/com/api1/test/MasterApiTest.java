@@ -17,6 +17,7 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 import static io.restassured.RestAssured.*;
 
 public class MasterApiTest {
+	
 	@Test
 	public void MasterApiTest() {
 		given()
