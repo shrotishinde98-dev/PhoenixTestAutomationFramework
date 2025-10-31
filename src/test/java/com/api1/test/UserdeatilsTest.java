@@ -20,10 +20,8 @@ public class UserdeatilsTest {
 	  @Test
 	public void Test() {
 		 
-		 Header m = new Header("Authorization",getToken(Role.FD));
-		
+		  Header m = new Header("Authorization",getToken(Role.FD));
 		 
-			
 		         given()
 			        .baseUri(ConfigManager.getProperty("BASE_URI"))
 			        .contentType(ContentType.JSON)
