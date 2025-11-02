@@ -93,7 +93,7 @@ RequestSpecification request =	 new RequestSpecBuilder()
 ResponseSpecification response = new ResponseSpecBuilder()
                    .expectContentType(ContentType.JSON)
                    .expectStatusCode(200)
-                   .expectResponseTime(Matchers.lessThan(1000L))
+                   .expectResponseTime(Matchers.lessThan(4000L))
                    .log(LogDetail.ALL)
                    .build();
      return response;

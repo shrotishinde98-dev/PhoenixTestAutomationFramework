@@ -20,15 +20,12 @@ import static io.restassured.RestAssured.*;
 import static io.restassured.module.jsv.JsonSchemaValidator.*;
 
 public class UserdeatilsTest {
-	  @Test
+	  @Test(description="verify correct userdetails api",groups={"api","regression","uat"})
 	public void Test() {
-
+    
 		  Header m = new Header("Authorization",getToken(Role.FD));
 
 		//Header m = new Header("Authorization",getToken(FD));
-		
-
-
 		 
 		         given()
 		 /*       .baseUri(ConfigManager.getProperty("BASE_URI"))

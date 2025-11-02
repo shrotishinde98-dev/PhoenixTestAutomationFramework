@@ -14,8 +14,9 @@ import com.api.utils.ConfigManager;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class CountApiTest {
-	@Test
+	@Test(description="verify correct count api ",groups={"api","regression","uat"})
 	public void CoutApiTest() {
+	
 		given()
 		.baseUri(ConfigManager.getProperty("BASE_URI"))
 		.header("Authorization",AuthToken.getToken(Role.FD))

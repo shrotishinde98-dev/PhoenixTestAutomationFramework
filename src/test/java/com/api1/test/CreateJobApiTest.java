@@ -4,6 +4,7 @@ package com.api1.test;
 
 
 import org.hamcrest.Matchers;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.api.constant.Model;
@@ -36,17 +37,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CreateJobApiTest { 
-	@Test
-	public void createJobApiTest() {
-		
+	private CreateJobPayload createJobPayload;
+	@BeforeTest(description="verify create job api payload")
+      public void setup(){
 		Customer customer = new Customer("shruti", "mane", "9004568952", " ", "shrutimane25@gmail.com", "shrotishinde98@gmail.com");
 		Customer_address customer_address = new Customer_address("304", "nmk", "nhi ","girgo", "pune", "421102", "India",  "Maharashtra");
-		Customer_product customer_product =  new Customer_product(DateTimeUtil.getTimewithDaysAgo(10),"12345678998869", "12345678998869", "12345678998869", DateTimeUtil.getTimewithDaysAgo(10), Product.Nexus_2.getCode(), Model.Nexus_2_blue.getCode());
+		Customer_product customer_product =  new Customer_product(DateTimeUtil.getTimewithDaysAgo(10),"12345678998169", "12345678998169", "12345678998169", DateTimeUtil.getTimewithDaysAgo(10), Product.Nexus_2.getCode(), Model.Nexus_2_blue.getCode());
 		Problems prob = new Problems(Problem.Smartphone_is_running_slow.getCode(),"battery");
 		List<Problems>  problemList = new ArrayList<Problems>();
 		problemList.add(prob);
 		
-		CreateJobPayload createJobPayload = new CreateJobPayload(ServiceLocation.SERVICE_LOCA_A.getCode(), Platform.FRONT_DESK.getCode(), Warranty_status.IN_WARRANTY.getCode(), OEM.GOOGLE.getCode(), customer, customer_address, customer_product, problemList);
+		 createJobPayload = new CreateJobPayload(ServiceLocation.SERVICE_LOCA_A.getCode(), Platform.FRONT_DESK.getCode(), Warranty_status.IN_WARRANTY.getCode(), OEM.GOOGLE.getCode(), customer, customer_address, customer_product, problemList);
+	}
+	@Test(description="verify correct craetejob api warranty",groups={"api","regression","uat"})
+	public void createJobApiTest() {
+		
+		
 	given()
     //.baseUri(ConfigManager.getProperty("BASE_URI"))
     //.header("Authorization", AuthToken.getToken(Role.FD))

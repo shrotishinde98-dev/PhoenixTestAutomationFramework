@@ -5,6 +5,7 @@
     <classes>
       <class name="com.api1.test.CreateJobApiTest">
         <methods>
+          <include name="setup"/>
           <include name="createJobApiTest"/>
         </methods>
       </class> <!-- com.api1.test.CreateJobApiTest -->

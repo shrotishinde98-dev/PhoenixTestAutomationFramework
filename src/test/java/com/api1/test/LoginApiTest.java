@@ -3,6 +3,7 @@ import static org.hamcrest.Matchers.*;
 
 import java.io.IOException;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.api.utils.ConfigManager;
@@ -16,16 +17,19 @@ import static io.restassured.module.jsv.JsonSchemaValidator.*;
 import static io.restassured.RestAssured.*;
 
 public class LoginApiTest {
-	@Test
+	
+	private user u;
+	
+	@BeforeTest(description = "create payload for login api")
+	public void setup(){
+		 u = new user("iamfd","password");
+	}
+	
+	@Test(description= "Verifying if login api is working for FD user",groups= {"api","regression","smoke"})
 	public void Test()  throws IOException {
 	
-		user u = new user("iamfd","password");
-		
-		
-		
-	 given()
+    given()
 		.spec(SpecUtil.requestSpec(u))
-		
 	
         .when()
         .post("login")
