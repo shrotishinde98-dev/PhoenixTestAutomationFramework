@@ -1,5 +1,6 @@
 name: Phoenix Test Automation Workflow
 
+
 on:
   push:
     branches: [ "master" ]
