@@ -5,6 +5,7 @@ import org.hamcrest.Matchers;
 
 import com.api.constant.Role;
 import com.api.utils.ConfigManager;
+import com.dataproviders.api.bean.UserBean;
 import com.pojo.user;
 
 import io.restassured.builder.RequestSpecBuilder;
@@ -69,13 +70,13 @@ public static RequestSpecification  AuthrequestSpec(Role role,Object Payload) {
 
 	
 	//POST-PUT-PATCH //user u--object payload
-	public static RequestSpecification requestSpec(user u) {
+	public static RequestSpecification requestSpec(Object  payload) {
 		
 RequestSpecification request =	 new RequestSpecBuilder()
 		  .setBaseUri(ConfigManager.getProperty("BASE_URI"))
 		  .setContentType(ContentType.JSON)
 		  .setAccept(ContentType.JSON)
-          .setBody(u)
+          .setBody(payload)
 		  .log(LogDetail.URI)
 		  .log(LogDetail.METHOD)
 		  .log(LogDetail.HEADERS)
