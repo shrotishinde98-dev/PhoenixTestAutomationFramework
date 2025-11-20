@@ -20,18 +20,18 @@ public class CSVReaderUtil {
 		
 		//no one can craete object oc csv util outside class
 	}
-	public static Iterator<UserBean> loadCSV(String pathOFCSVFile)  {
+	public static <T> Iterator<T> loadCSV(String pathOFCSVFile,Class<T>  bean){
 		InputStream is = Thread.currentThread().getContextClassLoader().getSystemResourceAsStream(pathOFCSVFile);
 		InputStreamReader isr = new InputStreamReader(is);
 		CSVReader csvReader =   new CSVReader(isr);
 	
 		CsvToBean  csvToBean= new CsvToBeanBuilder(csvReader)
-				.withType(UserBean.class)
+				.withType(bean)      //UserBean.class
 				.withIgnoreEmptyLine(true)
 				.build();
 		
-		List<UserBean>  userList = csvToBean.parse();
-	return	userList.iterator();
+		List<T>  list = csvToBean.parse();  //	List<UserBean> 
+	return	list.iterator();
 		//System.out.println(userList.get(1));
 		
 		
