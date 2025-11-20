@@ -17,8 +17,10 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 import static io.restassured.RestAssured.*;
 
 public class MasterApiTest {
-	@Test
+	
+	@Test(description="verify the master api details",groups= {"api","regression","uat"})
 	public void MasterApiTest() {
+		
 		given()
 		.baseUri(ConfigManager.getProperty("BASE_URI"))
 	
@@ -40,7 +42,7 @@ public class MasterApiTest {
 		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema/master.json"))
 	   	.log().all();
  	}
-     @Test
+     @Test(description="verify the master api negative details",groups= {"api","negative","uat"})
      public void Auth_missing() {
     	 given()
  		.baseUri(ConfigManager.getProperty("BASE_URI"))

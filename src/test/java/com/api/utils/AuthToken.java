@@ -16,7 +16,9 @@ public class AuthToken {
 
 	public static String getToken(Role role) {
 		
+		
 		user userdetails = null;
+		
 		
 		if(role == FD) {
 			userdetails =	new user("iamfd", "password");
