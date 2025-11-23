@@ -1,135 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-21T23:55:56 IST" name="Default suite" finished-at="2025-11-21T23:56:00 IST" duration-ms="4335">
+  <suite started-at="2025-11-24T00:34:00 IST" name="Default suite" finished-at="2025-11-24T00:34:04 IST" duration-ms="3745">
     <groups>
       <group name="regression">
-        <method signature="CreateJobApFakeiDataDrivenTest.createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" name="createJobApiTest" class="com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest"/>
+        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest@130161f7]" name="createJobApiTest" class="com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest"/>
       </group> <!-- regression -->
       <group name="uat">
-        <method signature="CreateJobApFakeiDataDrivenTest.createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" name="createJobApiTest" class="com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest"/>
+        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest@130161f7]" name="createJobApiTest" class="com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest"/>
       </group> <!-- uat -->
       <group name="data driven">
-        <method signature="CreateJobApFakeiDataDrivenTest.createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" name="createJobApiTest" class="com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest"/>
+        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest@130161f7]" name="createJobApiTest" class="com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest"/>
       </group> <!-- data driven -->
       <group name="api">
-        <method signature="CreateJobApFakeiDataDrivenTest.createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" name="createJobApiTest" class="com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest"/>
+        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest@130161f7]" name="createJobApiTest" class="com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2025-11-21T23:55:56 IST" name="Default test" finished-at="2025-11-21T23:56:00 IST" duration-ms="4335">
-      <class name="com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest">
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3961" status="PASS">
+    <test started-at="2025-11-24T00:34:00 IST" name="Default test" finished-at="2025-11-24T00:34:04 IST" duration-ms="3745">
+      <class name="com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest">
+        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest@130161f7]" started-at="2025-11-24T00:34:00 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIExcelDataprovider" finished-at="2025-11-24T00:34:04 IST" duration-ms="3070" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Darshwana, last_name=Bhattacharya, mobile_number=7060252060, mobile_number_alt=7039168307, email_id=chandramani.abbott@gmail.com, email_id_alt=chinmayanand.mishra@hotmail.com], customer_address=Customer_address[flat_number=840, apartment_name=Anagh Brooks, street_name=Pillai Terrace, landmark=Param Views, area=723 Embranthiri Square, pincode=95353, country=India, state=Chandigarh], customer_product=Customer_product[dop=2025-11-11T18:25:56.660950600Z, serial_number=981109904467023, imei1=981109904467023, imei2=981109904467023, popurl=www.bhuvanesh-dutta.name, product_id=1, mst_model_id=1], problems=[Problems[id=27, remark=Quis porro debitis porro.]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=sanket, last_name=mane, mobile_number=8765432121, mobile_number_alt=, email_id=sanket393@gmail.com, email_id_alt=], customer_address=Customer_address[flat_number=402, apartment_name=shiv, street_name=mandir road      , landmark=jain school, area=laxmi nagar, pincode=421102, country=India, state=Maharashtra], customer_product=Customer_product[dop=2025-08-31T18:30:00.000Z, serial_number=99626700000007, imei1=99626700000007, imei2=99626700000007, popurl=2025-08-31T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=2, remark=battery]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3963" status="PASS">
+        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest@130161f7]" started-at="2025-11-24T00:34:00 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIExcelDataprovider" finished-at="2025-11-24T00:34:04 IST" duration-ms="3070" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ranjit, last_name=Sharma, mobile_number=7059659652, mobile_number_alt=7069175819, email_id=siddarth.embranthiri@hotmail.com, email_id_alt=chandak.naik@gmail.com], customer_address=Customer_address[flat_number=631, apartment_name=Tushar Centers, street_name=Pothuvaal Overpass, landmark=Deevakar Overpass, area=32379 Agarwal Prairie, pincode=62034, country=India, state=Lakshadweep], customer_product=Customer_product[dop=2025-11-11T18:25:56.685951700Z, serial_number=659448365350195, imei1=659448365350195, imei2=659448365350195, popurl=www.ankal-marar.net, product_id=1, mst_model_id=1], problems=[Problems[id=29, remark=Aperiam animi.]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=udya, last_name=mane, mobile_number=8765432121, mobile_number_alt=, email_id=sanket393@gmail.com, email_id_alt=], customer_address=Customer_address[flat_number=402, apartment_name=shiv, street_name=mandir road      , landmark=jain school, area=laxmi nagar, pincode=421102, country=India, state=Maharashtra], customer_product=Customer_product[dop=2025-08-31T18:30:00.000Z, serial_number=99616700000001, imei1=99616700000001, imei2=99616700000001, popurl=2025-08-31T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=2, remark=battery]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3968" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Jagadish, last_name=Panicker, mobile_number=7062139866, mobile_number_alt=7045819789, email_id=meghnad.acharya@gmail.com, email_id_alt=garud.chattopadhyay@yahoo.co.in], customer_address=Customer_address[flat_number=337, apartment_name=Pushti Landing, street_name=Johar Lodge, landmark=Pothuvaal Spur, area=791 Madhuri Track, pincode=27431, country=India, state=Chandigarh], customer_product=Customer_product[dop=2025-11-11T18:25:56.739689200Z, serial_number=825791436562244, imei1=825791436562244, imei2=825791436562244, popurl=www.mohan-banerjee.com, product_id=1, mst_model_id=1], problems=[Problems[id=4, remark=Quisquam ut quod.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3931" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Bala, last_name=Gupta, mobile_number=7032263224, mobile_number_alt=7077054163, email_id=garud.banerjee@gmail.com, email_id_alt=chakrika.chattopadhyay@hotmail.com], customer_address=Customer_address[flat_number=838, apartment_name=Somayaji Via, street_name=Aanandaswarup Mountains, landmark=Chattopadhyay Highway, area=2499 Asan Mall, pincode=51894, country=India, state=Uttar Pradesh], customer_product=Customer_product[dop=2025-11-11T18:25:56.698959500Z, serial_number=597166676113413, imei1=597166676113413, imei2=597166676113413, popurl=www.gautami-pothuvaal.biz, product_id=1, mst_model_id=1], problems=[Problems[id=28, remark=Ratione earum voluptate.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3779" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Anil, last_name=Nair, mobile_number=7067159882, mobile_number_alt=7093673357, email_id=bakula.pandey@gmail.com, email_id_alt=balaaditya.ahluwalia@gmail.com], customer_address=Customer_address[flat_number=401, apartment_name=Gemine Trafficway, street_name=Aagam Fall, landmark=Laxmi Curve, area=42501 Embranthiri Drive, pincode=14382, country=India, state=Delhi], customer_product=Customer_product[dop=2025-11-11T18:25:56.692959200Z, serial_number=939774750729997, imei1=939774750729997, imei2=939774750729997, popurl=www.balachandra-khatri.biz, product_id=1, mst_model_id=1], problems=[Problems[id=17, remark=Sit eos dolores corporis enim molestiae nostrum.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Vinay, last_name=Patil, mobile_number=7048071802, mobile_number_alt=7074952076, email_id=vrinda.desai@gmail.com, email_id_alt=bhuvaneshwar.ahuja@hotmail.com], customer_address=Customer_address[flat_number=582, apartment_name=Kapoor Highway, street_name=Ekaaksh Via, landmark=Tagore Dam, area=455 Shwet Avenue, pincode=34780, country=India, state=Andaman and Nicobar Islands], customer_product=Customer_product[dop=2025-11-11T18:25:56.712477Z, serial_number=763132234817587, imei1=763132234817587, imei2=763132234817587, popurl=www.aditeya-varrier.name, product_id=1, mst_model_id=1], problems=[Problems[id=2, remark=Quae quos accusantium et consectetur.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3778" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Sukanya, last_name=Chattopadhyay, mobile_number=7023944005, mobile_number_alt=7008236557, email_id=sudeva.dubashi@yahoo.co.in, email_id_alt=ameyatma.kaur@yahoo.co.in], customer_address=Customer_address[flat_number=667, apartment_name=Sharma Road, street_name=Chandrakala Cliff, landmark=Gowda Springs, area=24695 Kaul Track, pincode=28650, country=India, state=Assam], customer_product=Customer_product[dop=2025-11-11T18:25:56.719478400Z, serial_number=808080449626952, imei1=808080449626952, imei2=808080449626952, popurl=www.bhavani-mehrotra.com, product_id=1, mst_model_id=1], problems=[Problems[id=28, remark=Quo ipsum cum.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3977" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Gajabahu, last_name=Jha, mobile_number=7077019331, mobile_number_alt=7046039920, email_id=deepali.chopra@yahoo.co.in, email_id_alt=jagdish.iyengar@yahoo.co.in], customer_address=Customer_address[flat_number=461, apartment_name=Guneta Row, street_name=Desai Street, landmark=Dhawan Lock, area=52691 Adhrit Well, pincode=86819, country=India, state=Sikkim], customer_product=Customer_product[dop=2025-11-11T18:25:56.705466800Z, serial_number=280297971572743, imei1=280297971572743, imei2=280297971572743, popurl=www.rajendra-achari.com, product_id=1, mst_model_id=1], problems=[Problems[id=20, remark=Quo esse.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="4001" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Opalina, last_name=Dutta, mobile_number=7013316355, mobile_number_alt=7038356981, email_id=bhooshit.nayar@hotmail.com, email_id_alt=prasanna.bhattathiri@hotmail.com], customer_address=Customer_address[flat_number=922, apartment_name=Amaranaath Vista, street_name=Chitraksh Vista, landmark=Prathamesh Rest, area=60466 Opalina Parkways, pincode=01166, country=India, state=Kerala], customer_product=Customer_product[dop=2025-11-11T18:25:56.726690500Z, serial_number=165336676538261, imei1=165336676538261, imei2=165336676538261, popurl=www.parvati-talwar.biz, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Labore culpa velit quibusdam.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.pojo.CreateJobPayload)[pri:0, instance:com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@6ca8564a]" started-at="2025-11-21T23:55:56 IST" name="createJobApiTest" description="verify correct craetejob api warranty" data-provider="CraeteJobAPIFakeDataprovider" finished-at="2025-11-21T23:56:00 IST" duration-ms="3935" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Heema, last_name=Bhattathiri, mobile_number=7063443352, mobile_number_alt=7029584341, email_id=nagabhushanam.iyer@gmail.com, email_id_alt=aasa.marar@yahoo.co.in], customer_address=Customer_address[flat_number=121, apartment_name=Deshpande Pine, street_name=Gauranga Oval, landmark=Dhanvin Parkways, area=3205 Apsara Glens, pincode=84601, country=India, state=Rajasthan], customer_product=Customer_product[dop=2025-11-11T18:25:56.733696300Z, serial_number=475027971448914, imei1=475027971448914, imei2=475027971448914, popurl=www.chandrakin-singh.info, product_id=1, mst_model_id=1], problems=[Problems[id=26, remark=Fugiat et tempora voluptatibus quod.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-      </class> <!-- com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest -->
+      </class> <!-- com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

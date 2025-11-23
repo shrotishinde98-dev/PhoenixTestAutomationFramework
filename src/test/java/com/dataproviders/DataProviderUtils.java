@@ -8,10 +8,12 @@ import org.testng.annotations.DataProvider;
 
 import com.api.utils.CSVReaderUtil;
 import com.api.utils.CreateJobBeanMapper;
+import com.api.utils.ExcelReaderUtil2;
 import com.api.utils.FakerDataGenerator;
 import com.dataproviders.api.bean.CreateJobBean;
 import com.dataproviders.api.bean.UserBean;
 import com.pojo.CreateJobPayload;
+import com.pojo.user;
 
 public class DataProviderUtils {
 	@DataProvider(name = "LoginAPIDataProvider", parallel =true)
@@ -50,5 +52,29 @@ public class DataProviderUtils {
 		
 		
 	}
+	
+	@DataProvider(name = "LoginAPIExcelDataProvider", parallel =true)
+	public static Iterator<UserBean> LoginAPIExcelDataProvider() {
+      return ExcelReaderUtil2.loadTestData("testData/PhoenixTestData.xlsx","LoginTestData", UserBean.class);
+		//loginof excel
+	}
+	
+	@DataProvider(name = "CraeteJobAPIExcelDataprovider",parallel=true)
+	  public static Iterator<CreateJobPayload> CraeteJobAPIExcelDataprovider() {
+		Iterator<CreateJobBean> iterator = ExcelReaderUtil2.loadTestData("testData\\PhoenixTestData.xlsx", "CreateJobTestData", CreateJobBean.class);
+
+
+			List<CreateJobPayload> payloadList = new ArrayList<CreateJobPayload>();
+			CreateJobBean tempBean;
+
+			CreateJobPayload tempPayload;
+			while (iterator.hasNext()) {
+				tempBean = iterator.next();
+				tempPayload = CreateJobBeanMapper.mapper(tempBean);
+				payloadList.add(tempPayload);
+
+			}
+			return payloadList.iterator();
+		}
 
 }
