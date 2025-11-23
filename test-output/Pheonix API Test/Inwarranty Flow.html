@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Inwarranty Flow</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 28 23:25:44 IST 2025</td>
+<td>Started on:</td><td>Mon Nov 24 00:53:45 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5569 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7620 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,312 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=sanket, last_name=mane, mobile_number=8765432121, mobile_number_alt=, email_id=sanket393@gmail.com, email_id_alt=], customer_address=Customer_address[flat_number=402, apartment_name=shiv, street_name=mandir road      , landmark=jain school, area=laxmi nagar, pincode=421102, country=India, state=Maharashtra], customer_product=Customer_product[dop=2025-08-31T18:30:00.000Z, serial_number=99626700000007, imei1=99626700000007, imei2=99626700000007, popurl=2025-08-31T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=2, remark=battery]]]</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:61)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1980958547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1980958547'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest@50eac852</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.LoginApiDtaDrivenTest.Test()'><b>Test</b><br>Test class: com.api1.test.datadriven.LoginApiDtaDrivenTest<br>Test method: Verifying if login api is working for FD user<br>Parameters: UserBean [username=jatin, password=12345]</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.LoginApiDtaDrivenTest.Test(LoginApiDtaDrivenTest.java:36)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1198064393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1198064393'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.LoginApiDtaDrivenTest.Test(LoginApiDtaDrivenTest.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.api1.test.datadriven.LoginApiDtaDrivenTest@16ec5519</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.LoginApiExcelDataDrivenTest.Test()'><b>Test</b><br>Test class: com.api1.test.datadriven.LoginApiExcelDataDrivenTest<br>Test method: Verifying if login api excel is working for FD user<br>Parameters: UserBean [username=san, password=password]</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.LoginApiExcelDataDrivenTest.Test(LoginApiExcelDataDrivenTest.java:36)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace427975418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace427975418'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.LoginApiExcelDataDrivenTest.Test(LoginApiExcelDataDrivenTest.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.api1.test.datadriven.LoginApiExcelDataDrivenTest@2f7298b</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=udya, last_name=mane, mobile_number=8765432121, mobile_number_alt=, email_id=sanket393@gmail.com, email_id_alt=], customer_address=Customer_address[flat_number=402, apartment_name=shiv, street_name=mandir road      , landmark=jain school, area=laxmi nagar, pincode=421102, country=India, state=Maharashtra], customer_product=Customer_product[dop=2025-08-31T18:30:00.000Z, serial_number=99616724637906, imei1=99616724637906, imei2=99616724637906, popurl=2025-08-31T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=2, remark=battery]]]</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:61)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1295950679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1295950679'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.api1.test.datadriven.CreateJobApiDataDrivenTest@61df66b6</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=sanket, last_name=mane, mobile_number=8765432121, mobile_number_alt=, email_id=sanket393@gmail.com, email_id_alt=], customer_address=Customer_address[flat_number=402, apartment_name=shiv, street_name=mandir road      , landmark=jain school, area=laxmi nagar, pincode=421102, country=India, state=Maharashtra], customer_product=Customer_product[dop=2025-08-31T18:30:00.000Z, serial_number=99626724637906, imei1=99626724637906, imei2=99626724637906, popurl=2025-08-31T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=2, remark=battery]]]</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:61)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace35571588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace35571588'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>1</td>
+<td>com.api1.test.datadriven.CreateJobApiDataDrivenTest@61df66b6</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=udya, last_name=mane, mobile_number=8765432121, mobile_number_alt=, email_id=sanket393@gmail.com, email_id_alt=], customer_address=Customer_address[flat_number=402, apartment_name=shiv, street_name=mandir road      , landmark=jain school, area=laxmi nagar, pincode=421102, country=India, state=Maharashtra], customer_product=Customer_product[dop=2025-08-31T18:30:00.000Z, serial_number=99616700000001, imei1=99616700000001, imei2=99616700000001, popurl=2025-08-31T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=2, remark=battery]]]</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:61)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17520176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17520176'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$13.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.api1.test.datadriven.CreateJobApiExcelDataDrivenTest@50eac852</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,35 +381,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.api1.test.UserdeatilsTest.Test()'><b>Test</b><br>Test class: com.api1.test.UserdeatilsTest</td>
+<td title='com.api1.test.datadriven.LoginApiExcelDataDrivenTest.Test()'><b>Test</b><br>Test class: com.api1.test.datadriven.LoginApiExcelDataDrivenTest<br>Test method: Verifying if login api excel is working for FD user<br>Parameters: UserBean [username=iameng, password=password]</td>
 <td></td>
 <td>0</td>
-<td>com.api1.test.UserdeatilsTest@41fbdac4</td></tr>
+<td>com.api1.test.datadriven.LoginApiExcelDataDrivenTest@2f7298b</td></tr>
 <tr>
-<td title='com.api1.test.MasterApiTest.MasterApiTest()'><b>MasterApiTest</b><br>Test class: com.api1.test.MasterApiTest</td>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Shakti, last_name=Mahajan, mobile_number=7072633199, mobile_number_alt=7065400533, email_id=aanandinii.khanna@yahoo.co.in, email_id_alt=gayatri.abbott@hotmail.com], customer_address=Customer_address[flat_number=219, apartment_name=Varrier Vista, street_name=Jain Tunnel, landmark=Prajapat Alley, area=2360 Chidambaram Locks, pincode=21758, country=India, state=Gujarat], customer_product=Customer_product[dop=2025-11-13T19:23:46.054277600Z, serial_number=135450677574136, imei1=135450677574136, imei2=135450677574136, popurl=www.meghnath-dutta.org, product_id=1, mst_model_id=1], problems=[Problems[id=16, remark=Omnis facilis delectus aut fugiat.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.LoginApiExcelDataDrivenTest.Test()'><b>Test</b><br>Test class: com.api1.test.datadriven.LoginApiExcelDataDrivenTest<br>Test method: Verifying if login api excel is working for FD user<br>Parameters: UserBean [username=iamqc, password=password]</td>
 <td></td>
 <td>0</td>
-<td>com.api1.test.MasterApiTest@35ef1869</td></tr>
+<td>com.api1.test.datadriven.LoginApiExcelDataDrivenTest@2f7298b</td></tr>
 <tr>
-<td title='com.api1.test.LoginApiTest.Test()'><b>Test</b><br>Test class: com.api1.test.LoginApiTest</td>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Siddhi, last_name=Nambeesan, mobile_number=7013149772, mobile_number_alt=7057056162, email_id=siddarth.kapoor@yahoo.co.in, email_id_alt=harinakshi.achari@hotmail.com], customer_address=Customer_address[flat_number=916, apartment_name=Bhat Station, street_name=Shakuntala Curve, landmark=Aaditya Underpass, area=223 Rukhmani Route, pincode=08653, country=India, state=Nagaland], customer_product=Customer_product[dop=2025-11-13T19:23:46.038268600Z, serial_number=537225790087353, imei1=537225790087353, imei2=537225790087353, popurl=www.bhoj-patil.com, product_id=1, mst_model_id=1], problems=[Problems[id=7, remark=Nemo eos.]]]</td>
 <td></td>
-<td>2</td>
-<td>com.api1.test.LoginApiTest@72f926e6</td></tr>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
 <tr>
-<td title='com.api1.test.CountApiTest.CoutApiTest()'><b>CoutApiTest</b><br>Test class: com.api1.test.CountApiTest</td>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Maheswar, last_name=Pothuvaal, mobile_number=7056307997, mobile_number_alt=7012195541, email_id=drona.khan@yahoo.co.in, email_id_alt=eekalabya.mukhopadhyay@hotmail.com], customer_address=Customer_address[flat_number=380, apartment_name=Tagore Loop, street_name=Johar Alley, landmark=Chattopadhyay Meadows, area=3570 Acharyasuta Mountains, pincode=89459, country=India, state=Jharkhand], customer_product=Customer_product[dop=2025-11-13T19:23:46.113793600Z, serial_number=009321378832842, imei1=009321378832842, imei2=009321378832842, popurl=www.akshita-bhattacharya.net, product_id=1, mst_model_id=1], problems=[Problems[id=4, remark=Rem ab doloribus.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Shivakari, last_name=Ahuja, mobile_number=7015915149, mobile_number_alt=7099524268, email_id=sanya.mukhopadhyay@hotmail.com, email_id_alt=bankimchandra.joshi@yahoo.co.in], customer_address=Customer_address[flat_number=895, apartment_name=Anuja Rapid, street_name=Menon Island, landmark=Dinesh Green, area=704 Deeptimoy Summit, pincode=12463, country=India, state=Lakshadweep], customer_product=Customer_product[dop=2025-11-13T19:23:46.073793500Z, serial_number=554769204167943, imei1=554769204167943, imei2=554769204167943, popurl=www.tarun-johar.co.in, product_id=1, mst_model_id=1], problems=[Problems[id=12, remark=Placeat tenetur illum eum.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Adinath, last_name=Guneta, mobile_number=7009706793, mobile_number_alt=7038303373, email_id=tapan.pilla@gmail.com, email_id_alt=prasad.nambeesan@yahoo.co.in], customer_address=Customer_address[flat_number=939, apartment_name=Chopra Points, street_name=Gandhi Isle, landmark=Madhuri Mill, area=66288 Gill Glens, pincode=75619, country=India, state=Chandigarh], customer_product=Customer_product[dop=2025-11-13T19:23:46.014267600Z, serial_number=869456121834058, imei1=869456121834058, imei2=869456121834058, popurl=www.akshat-naik.com, product_id=1, mst_model_id=1], problems=[Problems[id=16, remark=Ducimus voluptate libero sint veniam et.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Anil, last_name=Jain, mobile_number=7008386583, mobile_number_alt=7017490174, email_id=sushma.ahluwalia@yahoo.co.in, email_id_alt=trilochana.naik@yahoo.co.in], customer_address=Customer_address[flat_number=964, apartment_name=Singh Loaf, street_name=Devi Estates, landmark=Urmila Gateway, area=668 Pandey Skyway, pincode=56857, country=India, state=Rajasthan], customer_product=Customer_product[dop=2025-11-13T19:23:46.105798800Z, serial_number=843966820566954, imei1=843966820566954, imei2=843966820566954, popurl=www.deependra-ahuja.net, product_id=1, mst_model_id=1], problems=[Problems[id=10, remark=Molestiae et autem fugiat inventore consequuntur.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Anang, last_name=Butt, mobile_number=7074058117, mobile_number_alt=7075363751, email_id=jagmeet.kaul@yahoo.co.in, email_id_alt=chandi.joshi@hotmail.com], customer_address=Customer_address[flat_number=023, apartment_name=Abbott Lights, street_name=Rohana Centers, landmark=Swapnil Shoals, area=794 Chiranjeev Circle, pincode=23008, country=India, state=Chandigarh], customer_product=Customer_product[dop=2025-11-13T19:23:46.082793500Z, serial_number=085738333962458, imei1=085738333962458, imei2=085738333962458, popurl=www.dhyaneshwar-jain.in, product_id=1, mst_model_id=1], problems=[Problems[id=26, remark=Repudiandae quisquam vitae.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.LoginApiDtaDrivenTest.Test()'><b>Test</b><br>Test class: com.api1.test.datadriven.LoginApiDtaDrivenTest<br>Test method: Verifying if login api is working for FD user<br>Parameters: UserBean [username=iamqc, password=password]</td>
 <td></td>
 <td>0</td>
-<td>com.api1.test.CountApiTest@3c407114</td></tr>
+<td>com.api1.test.datadriven.LoginApiDtaDrivenTest@16ec5519</td></tr>
 <tr>
-<td title='com.api1.test.MasterApiTest.Auth_missing()'><b>Auth_missing</b><br>Test class: com.api1.test.MasterApiTest</td>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Baijayanti, last_name=Khanna, mobile_number=7016450548, mobile_number_alt=7056355113, email_id=suma.iyengar@gmail.com, email_id_alt=anasuya.acharya@yahoo.co.in], customer_address=Customer_address[flat_number=476, apartment_name=Nambeesan Avenue, street_name=Pilla Plains, landmark=Jha Stream, area=744 Bhooshit Stream, pincode=70887, country=India, state=Dadar and Nagar Haveli], customer_product=Customer_product[dop=2025-11-13T19:23:46.045270500Z, serial_number=101314379555815, imei1=101314379555815, imei2=101314379555815, popurl=www.menaka-gandhi.name, product_id=1, mst_model_id=1], problems=[Problems[id=11, remark=Explicabo vel quas pariatur exercitationem.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.LoginApiDtaDrivenTest.Test()'><b>Test</b><br>Test class: com.api1.test.datadriven.LoginApiDtaDrivenTest<br>Test method: Verifying if login api is working for FD user<br>Parameters: UserBean [username=iamfd, password=password]</td>
 <td></td>
 <td>0</td>
-<td>com.api1.test.MasterApiTest@35ef1869</td></tr>
+<td>com.api1.test.datadriven.LoginApiDtaDrivenTest@16ec5519</td></tr>
 <tr>
-<td title='com.api1.test.CountApiTest.NeagtiveTest()'><b>NeagtiveTest</b><br>Test class: com.api1.test.CountApiTest</td>
+<td title='com.api1.test.datadriven.LoginApiDtaDrivenTest.Test()'><b>Test</b><br>Test class: com.api1.test.datadriven.LoginApiDtaDrivenTest<br>Test method: Verifying if login api is working for FD user<br>Parameters: UserBean [username=iameng, password=password]</td>
 <td></td>
 <td>0</td>
-<td>com.api1.test.CountApiTest@3c407114</td></tr>
+<td>com.api1.test.datadriven.LoginApiDtaDrivenTest@16ec5519</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.LoginApiExcelDataDrivenTest.Test()'><b>Test</b><br>Test class: com.api1.test.datadriven.LoginApiExcelDataDrivenTest<br>Test method: Verifying if login api excel is working for FD user<br>Parameters: UserBean [username=iamfd, password=password]</td>
+<td></td>
+<td>0</td>
+<td>com.api1.test.datadriven.LoginApiExcelDataDrivenTest@2f7298b</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Lal, last_name=Guha, mobile_number=7019661308, mobile_number_alt=7007837698, email_id=shantanu.ahuja@hotmail.com, email_id_alt=gemine.tagore@hotmail.com], customer_address=Customer_address[flat_number=071, apartment_name=Khatri Ford, street_name=Dhaanyalakshmi Mountains, landmark=Sukanya Trail, area=5395 Khatri Lock, pincode=23468, country=India, state=Manipur], customer_product=Customer_product[dop=2025-11-13T19:23:46.062278100Z, serial_number=630735155249244, imei1=630735155249244, imei2=630735155249244, popurl=www.aarya-gowda.name, product_id=1, mst_model_id=1], problems=[Problems[id=9, remark=Et et accusantium magnam necessitatibus.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
+<tr>
+<td title='com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest.createJobApiTest()'><b>createJobApiTest</b><br>Test class: com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest<br>Test method: verify correct craetejob api warranty<br>Parameters: CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Kailash, last_name=Asan, mobile_number=7071759938, mobile_number_alt=7088905499, email_id=jyoti.ahuja@yahoo.co.in, email_id_alt=rajinder.bharadwaj@hotmail.com], customer_address=Customer_address[flat_number=195, apartment_name=Khan Meadow, street_name=Alok Courts, landmark=Akshaj Grove, area=0445 Shah Overpass, pincode=57218, country=India, state=Nagaland], customer_product=Customer_product[dop=2025-11-13T19:23:46.096792400Z, serial_number=630608741236119, imei1=630608741236119, imei2=630608741236119, popurl=www.shantanu-nayar.name, product_id=1, mst_model_id=1], problems=[Problems[id=20, remark=Dolor sequi placeat quo velit fuga.]]]</td>
+<td></td>
+<td>4</td>
+<td>com.api1.test.datadriven.CreateJobApFakeiDataDrivenTest@35ef1869</td></tr>
 </table><p>
 </body>
 </html>
