@@ -6,7 +6,7 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-  scedule: # Set the CRON for MIDNIGHT IST ---- UTC
+  scedule: # Set the CRON for MIDNIGHT IST ---- UTC   //schedule
    - cron: "30 18  *  *"        
 
   
